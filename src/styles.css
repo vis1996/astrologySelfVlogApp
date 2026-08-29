@@ -9,6 +9,10 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;font-family:"DM Sans",system-ui,sans-serif;color:var(--text);background:var(--cream)}
+/* Prevent unwanted horizontal scrolling on small devices caused by
+  large absolutely-positioned decorative elements. If you rely on an
+  off-canvas nav that intentionally overflows, adjust accordingly. */
+html,body{overflow-x:hidden}
 button,a{font:inherit}
 button{cursor:pointer}
 a{text-decoration:none;color:inherit}
